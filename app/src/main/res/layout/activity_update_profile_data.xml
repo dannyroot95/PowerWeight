@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".UI.UpdateProfileData">
+    
+    <com.osho.powerweight.Utils.PoppinsTextviewRegular
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:text="Actualize su información"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:hint="Altura en metros "
+            app:suffixText="Mtrs"
+            android:layout_height="wrap_content">
+
+            <com.osho.powerweight.Utils.PoppinsEditText
+                android:layout_width="match_parent"
+                android:id="@+id/edt_altura"
+                android:maxLength="4"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:hint="Edad"
+            android:layout_height="wrap_content">
+
+            <com.osho.powerweight.Utils.PoppinsEditText
+                android:layout_width="match_parent"
+                android:id="@+id/edt_edad"
+                android:maxLength="2"
+                android:inputType="number"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_height="60dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:cornerRadius="12dp"
+                android:shadowColor="@color/black"
+                android:textSize="14dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                android:id="@+id/btn_update"
+                android:text="ACTUALIZAR DATOS"
+                tools:ignore="RtlHardcoded" />
+
+            <ProgressBar
+                android:id="@+id/pb_update"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="8dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

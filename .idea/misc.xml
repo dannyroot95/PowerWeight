@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/activity_assistance.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/activity_checkout.xml" value="0.2" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/activity_dash_board.xml" value="0.268" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/activity_graphics.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/activity_health.xml" value="0.2" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/activity_profile.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/custom_spinner.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/dialog_causes.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/dialog_diet.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/dialog_pay.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/dialog_progress.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/layout/items_registers.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/Danny/AndroidStudioProjects/PowerWeight/app/src/main/res/xml/network_security_config.xml" value="0.11277173913043478" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

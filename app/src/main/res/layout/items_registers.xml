@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:src="@drawable/weight_icon"
+                android:layout_height="60dp"/>
+
+            <com.osho.powerweight.Utils.PoppinsTextviewBold
+                android:id="@+id/it_weight"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="00kg"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <com.osho.powerweight.Utils.PoppinsTextviewMedium
+                android:layout_width="match_parent"
+                android:text="Asistencia #0"
+                android:id="@+id/it_position"
+                android:layout_height="wrap_content"/>
+
+            <com.osho.powerweight.Utils.PoppinsTextviewMedium
+                android:layout_width="match_parent"
+                android:id="@+id/it_date"
+                android:text="Fecha : 20/20/2022"
+                android:layout_height="wrap_content"/>
+
+            <com.osho.powerweight.Utils.PoppinsTextviewMedium
+                android:layout_width="match_parent"
+                android:id="@+id/it_imc"
+                android:text="IMC : 23"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

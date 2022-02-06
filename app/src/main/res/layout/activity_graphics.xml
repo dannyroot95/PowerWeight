@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".UI.GraphicsActivity">
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    <com.osho.powerweight.Utils.PoppinsTextviewMedium
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="26dp"
+        android:text="Grafico evolutivo de mi peso"
+        android:layout_height="wrap_content"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/graphicWeight"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="5dp"/>
+
+    <com.osho.powerweight.Utils.PoppinsTextviewMedium
+        android:layout_width="match_parent"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="10dp"
+        android:text="Indice de masa corporal"
+        android:layout_height="wrap_content"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/graphicIMC"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <com.osho.powerweight.Utils.PoppinsTextviewMedium
+            android:layout_width="wrap_content"
+            android:text="Promedio de IMC : "
+            android:layout_height="wrap_content"/>
+
+        <com.osho.powerweight.Utils.PoppinsTextviewBold
+            android:layout_width="wrap_content"
+            android:id="@+id/imc_average"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <com.osho.powerweight.Utils.PoppinsTextviewMedium
+            android:layout_width="wrap_content"
+            android:text="Estado : "
+            android:layout_height="wrap_content"/>
+
+        <com.osho.powerweight.Utils.PoppinsTextviewBold
+            android:layout_width="wrap_content"
+            android:id="@+id/imcStatus"
+            android:textColor="@color/black"
+            android:text="null"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+  <com.osho.powerweight.Utils.PoppinsTextviewMedium
+            android:layout_width="match_parent"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="10dp"
+            android:text="Diferencias entre parámetros"
+            android:layout_height="wrap_content"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"/>
+    </LinearLayout>
+ </ScrollView>
+</LinearLayout>
