@@ -39,11 +39,13 @@ class AuthenticationProvider {
     fun logout(context: Context) {
         val tinyDB  = TinyDB(context)
         val sharedPreferences = context.getSharedPreferences(Constants.SUCCESS, Context.MODE_PRIVATE)
+        val sharedPreferencesWeight = context.getSharedPreferences(Constants.GET_LAST_WEIGHT, Context.MODE_PRIVATE)
         tinyDB.remove(Constants.KEY)
         tinyDB.remove(Constants.REGISTERS)
         tinyDB.remove(Constants.WEIGHT_LIST_NORMAL)
         tinyDB.remove(Constants.WEIGHT_LIST)
         sharedPreferences.edit().remove(Constants.KEY_SUCCESS).apply()
+        sharedPreferencesWeight.edit().remove(Constants.KEY_WEIGHT).apply()
         context.startActivity(Intent(context, MainActivity::class.java))
     }
 
