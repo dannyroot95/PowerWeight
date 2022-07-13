@@ -30,7 +30,6 @@ open class AssistanceAdapter(private val context: Context,
     @SuppressLint("SetTextI18n", "SimpleDateFormat")
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val model = list[position]
-        var myPosition = 0
         val sdfDate = SimpleDateFormat("dd/MM/yyyy")
         val netDate = Date(model.timestamp)
         val myDate = sdfDate.format(netDate)
@@ -44,13 +43,14 @@ open class AssistanceAdapter(private val context: Context,
         val stIMC = rounded.toString()
 
         if (holder is MyViewHolder) {
-            myPosition += 1
-            holder.itemView.it_position.text = "Asistencia #$myPosition"
+            val myPos = position+1
+            holder.itemView.it_position.text = "Asistencia #$myPos"
             holder.itemView.it_date.text = "Fecha : $myDate"
             holder.itemView.it_weight.text = model.weight
             holder.itemView.it_imc.text = "IMC : $stIMC"
 
         }
+
     }
 
     override fun getItemCount(): Int {

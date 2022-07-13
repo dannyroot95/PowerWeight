@@ -40,9 +40,12 @@ class UpdateProfileData : AppCompatActivity() {
         val rfid = student.rfid
 
         if (age.isNotEmpty() && height.isNotEmpty()){
-            binding.pbUpdate.visibility = View.VISIBLE
-            mAuth.update(rfid,this,age,height,binding)
-
+            if(height.contains(".")){
+                binding.pbUpdate.visibility = View.VISIBLE
+                mAuth.update(rfid,this,age,height,binding)
+            }else{
+             Toast.makeText(this,"Ingrese su altura correctamente!",Toast.LENGTH_SHORT).show()
+            }
         }else{
             Toast.makeText(this,"Complete los campos!",Toast.LENGTH_SHORT).show()
         }

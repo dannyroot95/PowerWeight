@@ -73,7 +73,6 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity,"Complete los campos",Toast.LENGTH_SHORT).show()
             }
         }
-
     }
 
     private fun login() {
@@ -150,7 +149,6 @@ class MainActivity : AppCompatActivity() {
         }else{
             Toast.makeText(this@MainActivity,"Complete los campos!",Toast.LENGTH_SHORT).show()
         }
-
     }
 
     override fun onStart() {
